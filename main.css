@@ -1,0 +1,504 @@
+body{
+  background:lightgray;
+}
+#header a:hover{
+  color:#fff;
+}
+#bgimg{
+  background-size:cover;
+  min-height:500px;
+  /* background: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%),url('img/mech.jpg')no-repeat; */
+  background:linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url('img/mech.jpg')no-repeat;
+}
+
+
+#About{
+  margin-top:-200px;
+}
+
+#About .fa{
+  color:white;
+}
+#footerlogo a>i:hover{
+color:black;
+}
+
+
+#About span{
+  padding:10px 20px 10px 20px;
+  
+}
+
+
+
+#About hr{
+  border-width:4px;
+  margin-top:06px;
+}
+
+#Skills span{
+  padding:10px 20px 10px 20px;
+  
+
+}
+
+#Skills hr{
+  border-width:4px;
+  margin-top:06px;
+}
+
+#About button{
+ 
+  outline:solid 1px black;
+}
+#About button:hover{
+  box-shadow:0 0 15px grey;
+}
+
+#header a{
+  color:black;
+  font-weight: 1000;
+}
+
+
+#Skills h2{
+  color:darkslategray;
+  font-weight:normal;
+  padding-bottom:5px;
+}
+
+.bg-dark{
+  background: transparent!important;
+}
+
+#nav{
+  height:67px;
+}
+
+.def
+{
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin: 0 auto;
+  }
+
+  .cdef {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+   
+    
+  }
+  /* .cdef img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  } */
+  @media screen and (max-width: 800px) {
+    .cdef {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;}
+      .cdef img{
+        width:100px;
+        height:50px;
+      }
+    }
+  
+  @media screen and (max-width: 600px) {
+    .cdef{
+      -ms-flex: 25%;
+      flex: 25%;
+      max-width: 25%;
+    }
+    .cdef img{
+      width:100px;
+      height:50px;
+    }
+  }
+.progress-bar .bar-data {
+  font-size: 14px;
+  line-height: 1.1;
+  padding-right: 40px;
+  
+  background:white;
+  color:black;
+  
+}
+
+.progress-bar .bar-title {
+  display: block;
+  margin-bottom: 5px;
+  background:white;
+}
+.progress-bar .bar-value {
+  font-size: 16px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  background:white;
+}
+
+.progress-bar .bar-line {
+  height: 5px;
+  position: relative;
+ 
+  
+  
+}
+.progress-bar .bar-line:after {
+  opacity: 0.8;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  border-radius: 5px;
+  content: '';
+  background-color:white;
+
+}
+.progress-bar .bar-fill {
+  background-color: #00bcd4;
+ 
+  height: 100%;
+  display: block;
+  position: relative;
+  z-index: 1;
+ 
+  border-radius: 10px;
+  
+ 
+}
+
+#Skills .col-sm-6 {
+    width: 50%;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/* chip */
+.chip {
+  display: inline-block;
+  padding: 0 15px;
+  margin-bottom:5px;
+  height: 30x;
+  font-size: 15px;
+  line-height: 40px;
+  border:solid 1px lightgray;
+  border-radius:2px;
+  background-color:transparent;
+  color:grey;
+  
+}
+
+.tags{
+  padding-bottom:20px;
+  margin-left:25px;
+}
+
+.Scrolled{
+  background:black; 
+  
+}
+/* 
+.Scrolled .nav-item a{
+    color:white;
+} */
+
+
+
+/* *******************************************************timeline **************************************/
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-left:-30px;
+  margin-right:-25px;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background-color:darkseagreen;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+/* Container around content */
+.containertime {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+/* The circles on the timeline */
+.containertime::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  right: -4px;
+  background-color:darkturquoise;
+  border: none;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+/* Place the container to the left */
+.left {
+  left: 0%;
+  
+  
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+  margin-bottom: -40px;
+  margin-top: -200px;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -6px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+
+ 
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 50px;
+  }
+  
+  /* Full-width containers */
+  .containertime {
+  width: 100%;
+  padding-left: 60px;
+  padding-right: 25px;
+  margin-bottom:20px;
+  margin-top:20px;
+  
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .containertime::before {
+  left: 50px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 43px;
+  margin-top:10px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+/********************************************box slider************************************************************/
+
+.carousel-control-prev,
+.carousel-control-next{
+  cursor: pointer;
+  position: relative;
+  
+  
+  width: auto;
+  margin-top: -220px;
+  padding: 16px;
+  color:black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  float:left;
+  border:solid 3px black;
+  left:88%;
+  background-color:turquoise;
+
+ 
+  
+}
+
+.logo_slider {
+  overflow: hidden;
+  width: 752px;
+  margin: auto;
+}
+
+.logo_slider {
+  overflow: hidden;
+}
+
+.logo_slider ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+ animation: mymove 5s ease-in-out infinite;
+  transform: translate(0,0);
+  transition: transform .2s ease-out .1s,opacity .3s ease-out .1s;
+}
+
+.logo_slider ul li {
+  flex-shrink: 0;
+  display: block;
+  border: 1px solid #ccc;
+  margin: 20px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.logo_slider img {
+  width: 100%;
+}
+
+@keyframes mymove {
+  0%    { transform: 0; }
+  100%  { transform: translateX(-120px); }
+}
+#formdetails{
+  margin-left:10%;
+  width:100%;
+  margin-top:20px;
+}
+.box input{
+  padding: 10px 0;
+  margin-bottom: 30px;
+  outline:none;
+  border:none;
+
+}
+
+.box textarea{
+  height:80px;
+  padding:10px 0;
+  margin-bottom:40px;
+}
+
+.box input,.box textarea{
+  width:80%;
+  box-sizing:border-box;
+  box-shadow: none;
+  outline:none;
+  border:none;
+  border-bottom:2px solid rgb(98, 100, 100);
+}
+
+.box textarea{
+  margin-bottom:20px;
+}
+
+.buttonsend{
+  
+  cursor:pointer;
+  background:rgb(10, 169, 231);
+  color:white;
+  margin-bottom:0;
+  text-transform:uppercase;
+} 
+
+.box form div{
+  position:relative;
+
+}
+.box form div label{
+  position:absolute;
+  top:10;
+  pointer-events: none;left: 0;
+  color:rgb(98, 100, 100);
+  transition:.5s;
+}
+
+.box input:focus~label,.box textarea:focus~label,.box input:valid~label,.box textarea:valid~label
+{
+top:-20px;
+left:0;
+color:rgb(10, 169, 231);
+font-size:12px;
+font-weight:bold;
+}
+
+.box input:focus,.box textarea:focus,.box input:valid,.box textarea:valid{
+  border-bottom:2px solid rgb(10, 169, 231);
+}
+
+#datatable{
+  margin-left:30px;
+  border-spacing:50px;
+}
+
+#datatable td{
+  padding: 15px; /* Apply cell padding */
+}
+
+
+@media screen and (max-width: 600px){
+  #firstcon{
+    left:-5px;
+    margin-left:-8px;
+  }
+
+  #secondcon{
+    margin-top:10px;
+    margin-right:23px;
+    left:-22px;
+  }
+}
